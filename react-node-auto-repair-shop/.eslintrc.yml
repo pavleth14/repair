@@ -1,0 +1,34 @@
+extends:
+  - react-app
+
+plugins:
+  - import
+  - react
+
+env:
+  browser: true
+  node: true
+  jest: true
+
+rules:
+  # IMPORT (React/Node projekti često pucaju bez ovoga)
+  import/no-unresolved: off
+  import/extensions: off
+  import/no-extraneous-dependencies: off
+
+  # STYLE (Windows + legacy projekti)
+  linebreak-style: off
+  quotes: off
+
+  # JS REAL-WORLD FIXES
+  no-underscore-dangle: off
+  no-shadow: off
+  no-unused-vars: warn
+  prefer-const: warn
+  func-names: off
+  one-var: off
+  no-console: off
+
+  # REACT
+  react/jsx-filename-extension: off
+  react/prop-types: off
